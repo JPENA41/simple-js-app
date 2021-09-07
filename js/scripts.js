@@ -1,3 +1,5 @@
+alert('Hello world');
+
 // Variables //
 let myName = 'Bob';
 document.write(myName);
