@@ -1,5 +1,19 @@
-alert('Hello world');
+let pokemonList = [
+        {
+          name: 'Bulbasaur',
+          types: ['Grass', 'Poison'],
+          height: 0.7
+        },
 
-// Variables //
-let favoriteFood = 2;
-document.write(favoriteFood);
+        {
+          name: 'Ivysaur',
+          types: ['Grass', 'Poison'],
+          height: 1
+        },
+
+        {
+          name: 'Venusaur',
+          types: ['Grass', 'Poison'],
+          height: 2
+        }
+];
