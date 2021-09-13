@@ -1,4 +1,4 @@
-// Create an array called pokemonList with objects contating the pokemon's name, height and type. //
+// Create an array called pokemonList with objects contating the pokemon's name, height and type.
 let pokemonList = [
   {
     name: 'Bulbasaur',
@@ -19,9 +19,9 @@ let pokemonList = [
   }
 ];
 
-// Created a for loop that iterates over each item in pokemonList //
+// Created a for loop that iterates over each item in pokemonList.
 for (let i=0; i < pokemonList.length; i++){
-// Created two variable "pokemonList.name" and "pokemonlist.height" //
+// Created two variable "pokemonList.name" and "pokemonlist.height."
   let pokemonName = pokemonList[i].name;
   let pokemonHeight = pokemonList[i].height;
 
