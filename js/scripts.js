@@ -21,10 +21,6 @@ let pokemonRepository = (function () {
     return pokemonList;
   }
 
-  function add(pokemon) {
-    pokemonList.push(pokemon);
-  }
-
   // Display pokemonList with the DOM
   function addListItem(pokemon){
     let pokemonList = document.querySelector(".pokemon-list");
@@ -37,9 +33,6 @@ let pokemonRepository = (function () {
     pokemonList.appendChild(listpokemon);
 
     addEventListener(button, pokemon);
-    button.addEventListener("click", function(event) {
-      showDetails(pokemon);
-    });
   }
 
   // GET the complete list of Pokémon
@@ -53,7 +46,6 @@ let pokemonRepository = (function () {
          detailsUrl: item.url
        };
        add(pokemon);
-       console.log(pokemon);
      });
    }).catch(function (e) {
      console.error(e);
