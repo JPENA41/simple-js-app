@@ -1,98 +1,28 @@
-/*
-Color Used
-Primary Color (Marzipan): #f9e09f;
-Text Color (Black): #000000;
-Button Color (Turquoise): #30d5c8
-*/
+:root {
+  --bg-color: #f9e09f; /* Marzipan */
+  --txt-color: black;
+  --btn-color: #29cc9a; /* Teal Crown */
+}
 
 html,
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-#modal-container {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high  */
-  overflow: auto;
-
-  /* this is used to center the modal */
-  display: grid;
+/* Center the heading */
+.title {
   text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: left;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  /* CSS for modal container - add your own desired CSS styles here */
-  display: block;
-}
-
-/* Center Pokemon front sprite */
-.content-image {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Style the heading */
-h1 {
-  text-align: center;
-  font-size: 42px;
-  line-height: 20px;
-  font-weight: 100;
-  font-family: 'Teko', sans-serif;
 }
 
 /* Style the body */
 body {
-  background-color: #f9e09f;
+  background-color: var(--bg-color); /* Marzipan */
   padding: 10px;
 }
 
 /* Style the button */
 .button-class {
-  background-color: #30d5c8; /* Turquoise */
+  background-color: var(--btn-color); /* Teal Crown */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -105,9 +35,9 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
   width: 250px;
-  background-color: white;
-  color: black;
-  border: 3px solid #30d5c8; /* Turquoise */
+  background-color: var(--btn-color); /* Teal Crown */
+  color: var(--txt-color);  /* black */
+  border: 3px solid var(--btn-color); /* Teal Crown */
 }
 
 /* Remove bullet points and center list */
@@ -116,4 +46,17 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+/* Style the footer */
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-top: auto;
 }
