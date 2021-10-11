@@ -1,5 +1,5 @@
-// Create pokemonRespository to wrap pokemonList
-// Create an array called pokemonList with objects contating the pokemon's name,
+// Create pokemon_Repository to wrap pokemonList
+// Create an array called pokemonList with objects containing  the pokemon's name,
 // height and type.
 let pokemonRepository = (function () {
   let pokemonList = [];
