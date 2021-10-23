@@ -128,3 +128,26 @@ let pokemonRepository = (function () {
         pokemonRepository.addListItem(pokemon);
       });
     });
+
+    // When button is clicked, the user goes to the top of the page
+    let backbutton= document.getElementById('bck-to-top');
+    window.onscroll = function() {
+     scrollFunction();
+    };
+    function scrollFunction() {
+     if (
+       document.body.scrollTop > 200 ||
+       document.documentElement.scrollTop > 200
+     ) {
+      backbutton.style.display = 'block';
+     } else {
+      backbutton.style.display = 'none';
+     }
+    }
+
+    backbutton.addEventListener('click', backToTop);
+
+    function backToTop() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+    }
