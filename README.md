@@ -1,6 +1,6 @@
 # Pokedex
 
-1. User Goals: A digital encyclopedia, which displays the orignal 151 Pokemon. Within the pokedex, each pokemon should have basic data such as height, weight, types, abilities and their proper images.
+1. User Goals: A digital encyclopedia, which displays the original 151 Pokemon. Within the pokedex, each pokemon should have basic data such as height, weight, types, abilities and their proper images.
 
 2. Key Features:
 - Load data from an outside source (API) 
