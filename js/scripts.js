@@ -151,3 +151,13 @@ let pokemonRepository = (function () {
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
     }
+
+    // Search each Pokemon
+    $(document).ready(function() {
+        $('#form1').on('keyup', function() {
+          let value = $(this).val().toLowerCase();
+          $('.pokemon-list *').filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
